@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curious Speaking Library</title>
+  <style>
+    :root {
+      --ink: #18211f;
+      --muted: #62716b;
+      --paper: #fbfaf5;
+      --line: #d9ded3;
+      --green: #2f7b57;
+      --green-dark: #205b42;
+      --gold: #d49b35;
+      --sky: #dceef2;
+      --red: #a33a2f;
+      --white: #ffffff;
+      --shadow: 0 18px 48px rgba(36, 49, 43, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, rgba(220, 238, 242, 0.78), rgba(251, 250, 245, 0.96) 42%),
+        var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    button,
+    select {
+      font: inherit;
+    }
+
+    button:disabled {
+      opacity: 0.62;
+      cursor: not-allowed;
+    }
+
+    .app {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 300px minmax(0, 1fr);
+    }
+
+    .sidebar {
+      border-right: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.62);
+      backdrop-filter: blur(16px);
+      padding: 24px;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      max-height: 100vh;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 850;
+      font-size: 20px;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      background: var(--green);
+      color: white;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      box-shadow: 0 10px 24px rgba(47, 123, 87, 0.24);
+    }
+
+    .nav,
+    .panel-stack,
+    .lesson-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .nav button {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      padding: 11px 12px;
+      border-radius: 8px;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .nav button.active {
+      background: #e9f2ea;
+      color: var(--green-dark);
+      font-weight: 750;
+    }
+
+    .lesson-list {
+      margin-top: 12px;
+      max-height: 42vh;
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .lesson-list button {
+      border: 1px solid #e5e8df;
+      border-radius: 8px;
+      background: var(--white);
+      color: var(--ink);
+      cursor: pointer;
+      padding: 12px;
+      text-align: left;
+      display: grid;
+      gap: 7px;
+    }
+
+    .lesson-list button:hover {
+      border-color: var(--green);
+    }
+
+    .lesson-list span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .lesson-list strong {
+      font-size: 14px;
+      line-height: 1.25;
+      margin: 0;
+    }
+
+    .side-panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.76);
+    }
+
+    .side-panel strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .side-panel span,
+    .side-panel p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    main {
+      padding: 28px;
+    }
+
+    .topbar {
+      display: grid;
+      grid-template-columns: minmax(220px, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 22px;
+    }
+
+    .past-select {
+      width: min(100%, 420px);
+      min-width: 220px;
+    }
+
+    select {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      color: var(--ink);
+      height: 42px;
+      padding: 0 12px;
+      min-width: 170px;
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+      flex-wrap: nowrap;
+      align-self: center;
+    }
+
+    .primary,
+    .ghost {
+      border-radius: 8px;
+      min-height: 42px;
+      padding: 0 14px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .primary {
+      border: 0;
+      background: var(--green);
+      color: white;
+      font-weight: 750;
+      box-shadow: 0 10px 24px rgba(47, 123, 87, 0.2);
+    }
+
+    .ghost {
+      border: 1px solid var(--line);
+      background: var(--white);
+      color: var(--ink);
+    }
+
+    .reset-action {
+      border-color: rgba(212, 155, 53, 0.5);
+      color: #9a5b22;
+      font-weight: 850;
+    }
+
+    .progress-track {
+      height: 8px;
+      border-radius: 999px;
+      background: #e8ebe3;
+      overflow: hidden;
+    }
+
+    .progress-track span {
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--green), var(--gold));
+    }
+
+    .hero {
+      min-height: 310px;
+      border-radius: 8px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 86% 18%, rgba(212, 155, 53, 0.32), transparent 28%),
+        radial-gradient(circle at 72% 82%, rgba(220, 238, 242, 0.32), transparent 34%),
+        linear-gradient(118deg, #203d34 0%, #2f7b57 58%, #8a7a45 100%);
+      color: white;
+      display: flex;
+      align-items: end;
+      padding: 34px;
+      margin-bottom: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-content {
+      max-width: 780px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.18);
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 13px;
+      font-weight: 750;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(38px, 6vw, 70px);
+      line-height: 0.96;
+      letter-spacing: 0;
+      max-width: 760px;
+    }
+
+    .hero p {
+      margin: 18px 0 0;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 18px;
+      line-height: 1.55;
+      max-width: 660px;
+    }
+
+    .status {
+      min-height: 22px;
+      margin: -8px 0 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(340px, 0.8fr);
+      gap: 22px;
+      align-items: start;
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 12px 30px rgba(36, 49, 43, 0.07);
+      height: 100%;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 6px;
+      padding: 4px;
+      border-radius: 8px;
+      background: #edf0ea;
+      overflow-x: auto;
+    }
+
+    .tabs button {
+      border: 0;
+      border-radius: 7px;
+      background: transparent;
+      padding: 8px 10px;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .tabs button.active {
+      background: var(--white);
+      color: var(--green-dark);
+      font-weight: 750;
+    }
+
+    .steps,
+    .qa-list,
+    .challenge-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .step,
+    .challenge-step {
+      display: grid;
+      grid-template-columns: 34px minmax(0, 1fr);
+      gap: 12px;
+      align-items: center;
+      padding: 14px;
+      background: var(--white);
+      border: 1px solid #e5e8df;
+      border-radius: 8px;
+    }
+
+    .step-number {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      background: var(--sky);
+      display: grid;
+      place-items: center;
+      font-weight: 850;
+      color: #2a5d67;
+    }
+
+    .sentence {
+      font-size: 17px;
+      line-height: 1.45;
+    }
+
+    .practice-bar {
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    .meter {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .meter-bars {
+      display: flex;
+      align-items: end;
+      gap: 3px;
+      height: 22px;
+    }
+
+    .meter-bars span {
+      width: 5px;
+      border-radius: 999px;
+      background: var(--green);
+    }
+
+    .meter-bars span:nth-child(1) { height: 8px; }
+    .meter-bars span:nth-child(2) { height: 15px; }
+    .meter-bars span:nth-child(3) { height: 20px; }
+    .meter-bars span:nth-child(4) { height: 12px; }
+
+    .record-tools {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .record-tools audio {
+      width: min(260px, 100%);
+      height: 38px;
+    }
+
+    .recording {
+      background: var(--red);
+      box-shadow: 0 10px 24px rgba(163, 58, 47, 0.2);
+    }
+
+    .side-stack {
+      display: grid;
+      gap: 22px;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .vocab {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+      gap: 8px;
+    }
+
+    .word,
+    .qa {
+      background: var(--white);
+      border: 1px solid #e5e8df;
+      border-radius: 8px;
+      padding: 11px;
+    }
+
+    .word strong,
+    .qa strong {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+
+    .word em {
+      display: block;
+      color: #4f8270;
+      font-size: 12px;
+      font-style: normal;
+      margin-bottom: 5px;
+    }
+
+    .word span,
+    .qa span {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .qa {
+      border-left: 4px solid var(--gold);
+    }
+
+    .lower-grid {
+      margin-top: 22px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 0.7fr) 220px;
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .prompt-box {
+      min-height: 144px;
+      background: var(--white);
+      border: 1px solid #e5e8df;
+      border-radius: 8px;
+      padding: 18px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .timer {
+      background: var(--green-dark);
+      color: white;
+      border-radius: 8px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 174px;
+    }
+
+    .timer strong {
+      font-size: 46px;
+      line-height: 1;
+    }
+
+    .timer span {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 14px;
+    }
+
+    @media (max-width: 1040px) {
+      .app {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+        height: auto;
+        max-height: none;
+        overflow: visible;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .lesson-list {
+        max-height: 260px;
+      }
+
+      .nav {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .topbar,
+      .dashboard,
+      .lower-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .actions {
+        justify-content: flex-start;
+      }
+
+      .side-stack {
+        grid-template-rows: auto;
+      }
+    }
+
+    @media (max-width: 640px) {
+      main {
+        padding: 18px;
+      }
+
+      .nav,
+      .vocab {
+        grid-template-columns: 1fr;
+      }
+
+      .section-head,
+      .practice-bar {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .actions {
+        flex-direction: column;
+      }
+
+      select,
+      .primary,
+      .ghost {
+        width: 100%;
+      }
+
+      .hero {
+        min-height: 380px;
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">CS</div>
+        <span>Curious Speaking</span>
+      </div>
+
+      <nav class="nav" aria-label="Lesson sections">
+        <button class="active" data-target="todaySection" type="button">Today</button>
+        <button data-target="patternsSection" type="button">Patterns</button>
+        <button data-target="responsesSection" type="button">Responses</button>
+        <button data-target="speakingSection" type="button">Speaking</button>
+      </nav>
+
+      <div class="panel-stack">
+        <div class="side-panel">
+          <strong>Progress</strong>
+          <span id="libraryCount">Loading lessons...</span>
+          <div class="progress-track" aria-hidden="true"><span id="progressBar"></span></div>
+        </div>
+
+        <div class="side-panel">
+          <strong>How It Works</strong>
+          <p>Choose a level, then press Next Random Lesson. New lessons skip topics you already opened.</p>
+        </div>
+
+      </div>
+    </aside>
+
+    <main>
+      <div class="topbar">
+        <select class="past-select" id="pastLessonSelect" aria-label="Past lessons">
+          <option value="">Past lessons</option>
+        </select>
+        <div class="actions">
+          <select id="levelSelect" aria-label="Level">
+            <option value="all">All levels</option>
+          </select>
+          <button class="ghost reset-action" id="resetProgressButton" type="button">Reset Progress</button>
+          <button class="primary" id="randomButton" type="button">Next Random Lesson</button>
+        </div>
+      </div>
+
+      <section class="hero" id="todaySection">
+        <div class="hero-content">
+          <div class="eyebrow" id="heroMeta">Offline Library</div>
+          <h1 id="topicTitle">Curious Speaking</h1>
+          <p id="topicIntro">Press Next Random Lesson to begin pattern training.</p>
+        </div>
+      </section>
+
+      <div class="status" id="statusText"></div>
+
+      <div class="dashboard">
+        <section class="section" id="patternsSection">
+          <div class="section-head">
+            <h2>Pattern Training</h2>
+            <div class="tabs" id="patternTabs" aria-label="Pattern tabs"></div>
+          </div>
+
+          <div class="steps" id="steps"></div>
+
+          <div class="practice-bar">
+            <div class="meter">
+              <div class="meter-bars" aria-hidden="true">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <span id="drillInstruction">Read the steps aloud</span>
+            </div>
+            <div class="record-tools">
+              <audio id="recordPlayback" controls hidden></audio>
+              <button class="primary" id="recordButton" type="button">Record Attempt</button>
+            </div>
+          </div>
+        </section>
+
+        <div class="side-stack">
+          <section class="section">
+            <div class="section-head">
+              <h2>Vocabulary</h2>
+            </div>
+            <div class="vocab" id="vocabulary"></div>
+          </section>
+
+          <section class="section" id="responsesSection">
+            <div class="section-head">
+              <h2>Automatic Response</h2>
+            </div>
+            <div class="qa-list" id="responses"></div>
+          </section>
+        </div>
+      </div>
+
+      <div class="lower-grid" id="speakingSection">
+        <section class="section">
+          <div class="section-head">
+            <h2>Expansion Challenge</h2>
+          </div>
+          <div class="challenge-list" id="challengeList"></div>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <h2>Final Speaking</h2>
+          </div>
+          <div class="prompt-box" id="finalSpeaking"></div>
+        </section>
+
+        <div class="timer">
+          <span>30-second round</span>
+          <strong id="timerText">00:30</strong>
+          <button class="primary" id="timerButton" type="button">Begin</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    let lessons = [];
+    let activeLesson = null;
+    let activePatternIndex = 0;
+    let timerId = null;
+    let secondsLeft = 30;
+    let mediaRecorder = null;
+    let recordedChunks = [];
+    let recordedAudioUrl = null;
+
+    const completedKey = "curious-speaking-completed";
+    const pronunciationMap = {
+      active: "/ˈæk.tɪv/",
+      adapt: "/əˈdæpt/",
+      ancient: "/ˈeɪn.ʃənt/",
+      archaeology: "/ˌɑːr.kiˈɑː.lə.dʒi/",
+      ash: "/æʃ/",
+      attention: "/əˈten.ʃən/",
+      communicate: "/kəˈmjuː.nə.keɪt/",
+      connection: "/kəˈnek.ʃən/",
+      creature: "/ˈkriː.tʃɚ/",
+      crust: "/krʌst/",
+      define: "/dɪˈfaɪn/",
+      dense: "/dens/",
+      directly: "/dəˈrekt.li/",
+      erupt: "/ɪˈrʌpt/",
+      eruption: "/ɪˈrʌp.ʃən/",
+      evidence: "/ˈev.ə.dəns/",
+      experience: "/ɪkˈspɪr.i.əns/",
+      explore: "/ɪkˈsplɔːr/",
+      "full moon": "/ˌfʊl ˈmuːn/",
+      habitat: "/ˈhæb.ə.tæt/",
+      information: "/ˌɪn.fɚˈmeɪ.ʃən/",
+      journey: "/ˈdʒɝː.ni/",
+      landmark: "/ˈlænd.mɑːrk/",
+      magma: "/ˈmæɡ.mə/",
+      memory: "/ˈmem.ɚ.i/",
+      merchant: "/ˈmɝː.tʃənt/",
+      migrate: "/ˈmaɪ.ɡreɪt/",
+      migration: "/maɪˈɡreɪ.ʃən/",
+      mysterious: "/mɪˈstɪr.i.əs/",
+      "new moon": "/ˌnuː ˈmuːn/",
+      "ocean noise": "/ˈoʊ.ʃən nɔɪz/",
+      observe: "/əbˈzɝːv/",
+      organize: "/ˈɔːr.ɡən.aɪz/",
+      pattern: "/ˈpæt̬.ɚn/",
+      phase: "/feɪz/",
+      predict: "/prɪˈdɪkt/",
+      preserve: "/prɪˈzɝːv/",
+      pressure: "/ˈpreʃ.ɚ/",
+      rare: "/rer/",
+      recall: "/rɪˈkɑːl/",
+      reflect: "/rɪˈflekt/",
+      regular: "/ˈreɡ.jə.lɚ/",
+      route: "/ruːt/",
+      scarce: "/skers/",
+      shipping: "/ˈʃɪp.ɪŋ/",
+      species: "/ˈspiː.ʃiːz/",
+      spice: "/spaɪs/",
+      spread: "/spred/",
+      store: "/stɔːr/",
+      sunlight: "/ˈsʌn.laɪt/",
+      sunlit: "/ˈsʌn.lɪt/",
+      trade: "/treɪd/",
+      "trade route": "/ˈtreɪd ruːt/",
+      transport: "/trænˈspɔːrt/",
+      underwater: "/ˌʌn.dɚˈwɑː.t̬ɚ/",
+      valuable: "/ˈvæl.jə.bəl/",
+      view: "/vjuː/"
+    };
+
+    const elements = {
+      navButtons: document.querySelectorAll(".nav button[data-target]"),
+      libraryCount: document.getElementById("libraryCount"),
+      progressBar: document.getElementById("progressBar"),
+      pastLessonSelect: document.getElementById("pastLessonSelect"),
+      levelSelect: document.getElementById("levelSelect"),
+      resetProgressButton: document.getElementById("resetProgressButton"),
+      randomButton: document.getElementById("randomButton"),
+      heroMeta: document.getElementById("heroMeta"),
+      topicTitle: document.getElementById("topicTitle"),
+      topicIntro: document.getElementById("topicIntro"),
+      statusText: document.getElementById("statusText"),
+      patternTabs: document.getElementById("patternTabs"),
+      steps: document.getElementById("steps"),
+      drillInstruction: document.getElementById("drillInstruction"),
+      vocabulary: document.getElementById("vocabulary"),
+      responses: document.getElementById("responses"),
+      challengeList: document.getElementById("challengeList"),
+      finalSpeaking: document.getElementById("finalSpeaking"),
+      recordButton: document.getElementById("recordButton"),
+      recordPlayback: document.getElementById("recordPlayback"),
+      timerButton: document.getElementById("timerButton"),
+      timerText: document.getElementById("timerText")
+    };
+
+    async function boot() {
+      try {
+        const response = await fetch("lessons.json", { cache: "no-store" });
+        if (!response.ok) throw new Error("lessons.json을 불러오지 못했습니다.");
+        lessons = await response.json();
+        renderLevelOptions();
+        updateProgress();
+        chooseRandomLesson();
+      } catch (error) {
+        setStatus(`${error.message} 파일을 직접 열었다면 로컬 서버로 열어주세요.`, true);
+      }
+    }
+
+    function renderLevelOptions() {
+      const levels = [...new Set(lessons.map((lesson) => lesson.level))].sort();
+      levels.forEach((level) => {
+        const option = document.createElement("option");
+        option.value = level;
+        option.textContent = level;
+        elements.levelSelect.append(option);
+      });
+    }
+
+    function setActiveLesson(lesson, message, shouldMarkCompleted = true) {
+      activeLesson = lesson;
+      activePatternIndex = 0;
+      clearRecordingPlayback();
+
+      elements.heroMeta.textContent = `${lesson.category} · ${lesson.level}`;
+      elements.topicTitle.textContent = lesson.topicTitle;
+      elements.topicIntro.textContent = lesson.intro;
+      elements.finalSpeaking.textContent = lesson.finalSpeaking;
+
+      renderPatternTabs();
+      renderPattern();
+      renderVocabulary();
+      renderResponses();
+      renderChallenge();
+      if (shouldMarkCompleted) {
+        markCompleted(lesson.id);
+      }
+      updateProgress();
+      setStatus(message);
+    }
+
+    function renderPatternTabs() {
+      elements.patternTabs.innerHTML = "";
+      activeLesson.patterns.forEach((pattern, index) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.textContent = pattern.name;
+        button.className = index === activePatternIndex ? "active" : "";
+        button.addEventListener("click", () => {
+          activePatternIndex = index;
+          renderPatternTabs();
+          renderPattern();
+        });
+        elements.patternTabs.append(button);
+      });
+    }
+
+    function renderPattern() {
+      const pattern = activeLesson.patterns[activePatternIndex];
+      elements.steps.innerHTML = "";
+      elements.drillInstruction.textContent = pattern.drillInstruction;
+      pattern.steps.forEach((sentence, index) => {
+        const row = document.createElement("div");
+        row.className = "step";
+        row.append(createStepNumber(index), createSentence(sentence));
+        elements.steps.append(row);
+      });
+    }
+
+    function renderVocabulary() {
+      elements.vocabulary.innerHTML = "";
+      activeLesson.vocabulary.forEach((item) => {
+        const word = document.createElement("div");
+        word.className = "word";
+        word.innerHTML = "<strong></strong><em></em><span></span>";
+        word.querySelector("strong").textContent = item.word;
+        word.querySelector("em").textContent = item.pronunciation || pronunciationMap[item.word.toLowerCase()] || "";
+        word.querySelector("span").textContent = item.meaning;
+        elements.vocabulary.append(word);
+      });
+    }
+
+    function renderResponses() {
+      elements.responses.innerHTML = "";
+      activeLesson.automaticResponses.forEach((item) => {
+        const qa = document.createElement("div");
+        qa.className = "qa";
+        qa.innerHTML = "<strong></strong><span></span>";
+        qa.querySelector("strong").textContent = item.question;
+        qa.querySelector("span").textContent = item.answer;
+        elements.responses.append(qa);
+      });
+    }
+
+    function renderChallenge() {
+      elements.challengeList.innerHTML = "";
+      activeLesson.expansionChallenge.forEach((sentence, index) => {
+        const row = document.createElement("div");
+        row.className = "challenge-step";
+        row.append(createStepNumber(index), createSentence(sentence));
+        elements.challengeList.append(row);
+      });
+    }
+
+    function createStepNumber(index) {
+      const number = document.createElement("div");
+      number.className = "step-number";
+      number.textContent = index + 1;
+      return number;
+    }
+
+    function createSentence(sentence) {
+      const text = document.createElement("div");
+      text.className = "sentence";
+      text.textContent = sentence;
+      return text;
+    }
+
+    function chooseRandomLesson() {
+      if (!lessons.length) return;
+      const completed = getCompletedIds();
+      const level = elements.levelSelect.value;
+      const levelLessons = lessons.filter((lesson) => level === "all" || lesson.level === level);
+      let pool = levelLessons.filter((lesson) => !completed.includes(lesson.id));
+      let message = "새 랜덤 수업을 불러왔습니다.";
+
+      if (!pool.length) {
+        pool = levelLessons;
+        message = level === "all"
+          ? "모든 수업을 끝냈습니다. 지난 수업 중에서 다시 뽑았습니다."
+          : "선택한 레벨의 새 수업을 모두 끝냈습니다. 같은 레벨에서 다시 뽑았습니다.";
+      }
+
+      if (!pool.length) {
+        setStatus("선택한 레벨에 수업이 없습니다.", true);
+        return;
+      }
+
+      const nextLesson = pool[Math.floor(Math.random() * pool.length)];
+      setActiveLesson(nextLesson, message);
+      document.getElementById("todaySection").scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function getStoredList(key) {
+      try {
+        const value = JSON.parse(localStorage.getItem(key) || "[]");
+        return Array.isArray(value) ? value : [];
+      } catch {
+        return [];
+      }
+    }
+
+    function setStoredList(key, value) {
+      localStorage.setItem(key, JSON.stringify(value));
+    }
+
+    function getCompletedIds() {
+      return getStoredList(completedKey).filter((id) => lessons.some((lesson) => lesson.id === id));
+    }
+
+    function markCompleted(lessonId) {
+      const completed = getCompletedIds();
+      if (!completed.includes(lessonId)) {
+        setStoredList(completedKey, [...completed, lessonId]);
+      }
+    }
+
+    function resetProgress() {
+      setStoredList(completedKey, []);
+      updateProgress();
+      chooseRandomLesson();
+      setStatus("진행 기록을 초기화했습니다.");
+    }
+
+    function updateProgress() {
+      const completedCount = getCompletedIds().length;
+      const total = lessons.length || 0;
+      const remaining = Math.max(total - completedCount, 0);
+      const percent = total ? Math.round((completedCount / total) * 100) : 0;
+      const text = `${completedCount}/${total} completed · ${remaining} left`;
+
+      elements.libraryCount.textContent = text;
+      elements.progressBar.style.width = `${percent}%`;
+      renderPastLessons();
+    }
+
+    function renderPastLessons() {
+      const completedIds = getCompletedIds().slice().reverse();
+      elements.pastLessonSelect.innerHTML = "";
+
+      const placeholder = document.createElement("option");
+      placeholder.value = "";
+      placeholder.textContent = completedIds.length ? "Past lessons" : "No past lessons yet";
+      elements.pastLessonSelect.append(placeholder);
+
+      completedIds.forEach((lessonId, index) => {
+        const lesson = lessons.find((item) => item.id === lessonId);
+        if (!lesson) return;
+
+        const option = document.createElement("option");
+        option.value = lesson.id;
+        option.textContent = `${completedIds.length - index}. ${lesson.topicTitle}`;
+        elements.pastLessonSelect.append(option);
+      });
+    }
+
+    function openPastLesson() {
+      const lesson = lessons.find((item) => item.id === elements.pastLessonSelect.value);
+      if (!lesson) return;
+
+      setActiveLesson(lesson, "지난 수업을 다시 불러왔습니다.", false);
+      elements.pastLessonSelect.value = "";
+      document.getElementById("todaySection").scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function scrollToSection(event) {
+      const button = event.currentTarget;
+      const target = document.getElementById(button.dataset.target);
+      if (!target) return;
+      elements.navButtons.forEach((navButton) => navButton.classList.remove("active"));
+      button.classList.add("active");
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function setStatus(message, isError = false) {
+      elements.statusText.textContent = message || "";
+      elements.statusText.style.color = isError ? "var(--red)" : "var(--muted)";
+      elements.statusText.style.fontWeight = isError ? "750" : "400";
+    }
+
+    async function toggleRecording() {
+      if (mediaRecorder?.state === "recording") {
+        mediaRecorder.stop();
+        elements.recordButton.disabled = true;
+        elements.recordButton.textContent = "Preparing...";
+        return;
+      }
+
+      if (!navigator.mediaDevices?.getUserMedia || !window.MediaRecorder) {
+        setStatus("이 브라우저에서는 녹음을 지원하지 않습니다.", true);
+        return;
+      }
+
+      clearRecordingPlayback();
+      recordedChunks = [];
+
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        mediaRecorder = new MediaRecorder(stream);
+        mediaRecorder.addEventListener("dataavailable", (event) => {
+          if (event.data.size > 0) recordedChunks.push(event.data);
+        });
+        mediaRecorder.addEventListener("stop", () => {
+          stream.getTracks().forEach((track) => track.stop());
+          showRecordingPlayback();
+        });
+        mediaRecorder.start();
+        elements.recordButton.textContent = "Stop Recording";
+        elements.recordButton.classList.add("recording");
+        setStatus("녹음 중입니다. 끝나면 Stop Recording을 누르세요.");
+      } catch {
+        setStatus("마이크 권한이 필요합니다. 브라우저에서 마이크 사용을 허용해주세요.", true);
+      }
+    }
+
+    function showRecordingPlayback() {
+      elements.recordButton.disabled = false;
+      elements.recordButton.textContent = "Record Again";
+      elements.recordButton.classList.remove("recording");
+      if (!recordedChunks.length) {
+        setStatus("녹음된 소리가 없습니다.", true);
+        return;
+      }
+
+      const blob = new Blob(recordedChunks, { type: recordedChunks[0].type || "audio/webm" });
+      recordedAudioUrl = URL.createObjectURL(blob);
+      elements.recordPlayback.src = recordedAudioUrl;
+      elements.recordPlayback.hidden = false;
+      setStatus("녹음이 준비됐습니다. 한 번 들어보면 자동으로 사라집니다.");
+    }
+
+    function clearRecordingPlayback() {
+      elements.recordPlayback.pause();
+      elements.recordPlayback.removeAttribute("src");
+      elements.recordPlayback.hidden = true;
+      elements.recordPlayback.load();
+      recordedChunks = [];
+      if (recordedAudioUrl) {
+        URL.revokeObjectURL(recordedAudioUrl);
+        recordedAudioUrl = null;
+      }
+    }
+
+    function clearRecordingAfterPlayback() {
+      clearRecordingPlayback();
+      elements.recordButton.textContent = "Record Attempt";
+      setStatus("재생이 끝나 녹음이 삭제됐습니다.");
+    }
+
+    function updateTimer() {
+      elements.timerText.textContent = `00:${String(secondsLeft).padStart(2, "0")}`;
+    }
+
+    function toggleTimer() {
+      if (timerId) {
+        clearInterval(timerId);
+        timerId = null;
+        elements.timerButton.textContent = "Begin";
+        return;
+      }
+
+      secondsLeft = 30;
+      updateTimer();
+      elements.timerButton.textContent = "Stop";
+      timerId = setInterval(() => {
+        secondsLeft -= 1;
+        updateTimer();
+        if (secondsLeft <= 0) {
+          clearInterval(timerId);
+          timerId = null;
+          elements.timerButton.textContent = "Begin";
+        }
+      }, 1000);
+    }
+
+    elements.navButtons.forEach((button) => button.addEventListener("click", scrollToSection));
+    elements.randomButton.addEventListener("click", chooseRandomLesson);
+    elements.pastLessonSelect.addEventListener("change", openPastLesson);
+    elements.levelSelect.addEventListener("change", chooseRandomLesson);
+    elements.resetProgressButton.addEventListener("click", resetProgress);
+    elements.recordButton.addEventListener("click", toggleRecording);
+    elements.recordPlayback.addEventListener("ended", clearRecordingAfterPlayback);
+    elements.timerButton.addEventListener("click", toggleTimer);
+
+    boot();
+  </script>
+</body>
+</html>
