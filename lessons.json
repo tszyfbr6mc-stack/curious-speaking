@@ -75,27 +75,33 @@
     "vocabulary": [
       {
         "word": "migrate",
-        "meaning": "이동하다"
+        "meaning": "이동하다",
+        "pronunciation": "/ˈmaɪ.ɡreɪt/"
       },
       {
         "word": "migration",
-        "meaning": "이동, 이주"
+        "meaning": "이동, 이주",
+        "pronunciation": "/maɪˈɡreɪ.ʃən/"
       },
       {
         "word": "habitat",
-        "meaning": "서식지"
+        "meaning": "서식지",
+        "pronunciation": "/ˈhæb.ə.tæt/"
       },
       {
         "word": "route",
-        "meaning": "경로"
+        "meaning": "경로",
+        "pronunciation": "/ruːt/"
       },
       {
         "word": "scarce",
-        "meaning": "부족한"
+        "meaning": "부족한",
+        "pronunciation": "/skers/"
       },
       {
         "word": "journey",
-        "meaning": "여정"
+        "meaning": "여정",
+        "pronunciation": "/ˈdʒɝː.ni/"
       }
     ],
     "finalSpeaking": "Some birds migrate across long distances to find food and warmer weather. Not all birds migrate, but some do when seasons change. Climate change may affect their habitats and migration routes in the future, so this topic is useful for speaking practice and general knowledge."
@@ -176,27 +182,33 @@
     "vocabulary": [
       {
         "word": "communicate",
-        "meaning": "의사소통하다"
+        "meaning": "의사소통하다",
+        "pronunciation": "/kəˈmjuː.nə.keɪt/"
       },
       {
         "word": "underwater",
-        "meaning": "물속에서"
+        "meaning": "물속에서",
+        "pronunciation": "/ˌʌn.dɚˈwɑː.t̬ɚ/"
       },
       {
         "word": "pattern",
-        "meaning": "패턴"
+        "meaning": "패턴",
+        "pronunciation": "/ˈpæt̬.ɚn/"
       },
       {
         "word": "distance",
-        "meaning": "거리"
+        "meaning": "거리",
+        "pronunciation": "/ˈdɪs.təns/"
       },
       {
         "word": "ocean noise",
-        "meaning": "해양 소음"
+        "meaning": "해양 소음",
+        "pronunciation": "/ˈoʊ.ʃən nɔɪz/"
       },
       {
         "word": "song",
-        "meaning": "노래"
+        "meaning": "노래",
+        "pronunciation": "/sɔːŋ/"
       }
     ],
     "finalSpeaking": "Some whales sing deep underwater to communicate with other whales. Whale songs are not random noises, but changing patterns. Ocean noise may make communication harder in the future, so this topic is useful for speaking practice and general knowledge."
@@ -277,27 +289,33 @@
     "vocabulary": [
       {
         "word": "hive",
-        "meaning": "벌집"
+        "meaning": "벌집",
+        "pronunciation": "/haɪv/"
       },
       {
         "word": "nectar",
-        "meaning": "꿀"
+        "meaning": "꿀",
+        "pronunciation": "/ˈnek.tɚ/"
       },
       {
         "word": "pollen",
-        "meaning": "꽃가루"
+        "meaning": "꽃가루",
+        "pronunciation": "/ˈpɑː.lən/"
       },
       {
         "word": "direction",
-        "meaning": "방향"
+        "meaning": "방향",
+        "pronunciation": "/dəˈrek.ʃən/"
       },
       {
         "word": "source",
-        "meaning": "근원"
+        "meaning": "근원",
+        "pronunciation": "/sɔːrs/"
       },
       {
         "word": "pesticide",
-        "meaning": "살충제"
+        "meaning": "살충제",
+        "pronunciation": "/ˈpes.tə.saɪd/"
       }
     ],
     "finalSpeaking": "Honeybees dance inside the hive to show other bees where food is. A bee dance is not entertainment, but information. Pesticides may affect bees and their food sources in the future, so this topic is useful for speaking practice and general knowledge."
@@ -378,27 +396,33 @@
     "vocabulary": [
       {
         "word": "octopus",
-        "meaning": "문어"
+        "meaning": "문어",
+        "pronunciation": "/ˈɑːk.tə.pəs/"
       },
       {
         "word": "intelligence",
-        "meaning": "지능"
+        "meaning": "지능",
+        "pronunciation": "/ɪnˈtel.ə.dʒəns/"
       },
       {
         "word": "solve",
-        "meaning": "해결하다"
+        "meaning": "해결하다",
+        "pronunciation": "/sɑːlv/"
       },
       {
         "word": "escape",
-        "meaning": "탈출하다"
+        "meaning": "탈출하다",
+        "pronunciation": "/ɪˈskeɪp/"
       },
       {
         "word": "backbone",
-        "meaning": "척추"
+        "meaning": "척추",
+        "pronunciation": "/ˈbæk.boʊn/"
       },
       {
         "word": "flexible",
-        "meaning": "유연한"
+        "meaning": "유연한",
+        "pronunciation": "/ˈflek.sə.bəl/"
       }
     ],
     "finalSpeaking": "Octopuses solve problems in complex ocean environments to find food and escape danger. An octopus has no backbone, but it can learn quickly. Scientists may discover more about animal intelligence in the future, so this topic is useful for speaking practice and general knowledge."
@@ -479,27 +503,33 @@
     "vocabulary": [
       {
         "word": "camouflage",
-        "meaning": "위장"
+        "meaning": "위장",
+        "pronunciation": "/ˈkæm.ə.flɑːʒ/"
       },
       {
         "word": "predator",
-        "meaning": "포식자"
+        "meaning": "포식자",
+        "pronunciation": "/ˈpred.ə.t̬ɚ/"
       },
       {
         "word": "prey",
-        "meaning": "먹이"
+        "meaning": "먹이",
+        "pronunciation": "/preɪ/"
       },
       {
         "word": "blend",
-        "meaning": "섞이다"
+        "meaning": "섞이다",
+        "pronunciation": "/blend/"
       },
       {
         "word": "protect",
-        "meaning": "보호하다"
+        "meaning": "보호하다",
+        "pronunciation": "/prəˈtekt/"
       },
       {
         "word": "habitat loss",
-        "meaning": "서식지 손실"
+        "meaning": "서식지 손실",
+        "pronunciation": "/ˈhæb.ə.tæt lɔːs/"
       }
     ],
     "finalSpeaking": "Many animals use camouflage in forests, deserts, and oceans to hide from predators or catch prey. Camouflage can protect animals, but it can also help them hunt. Habitat loss may make camouflage less useful in the future, so this topic is useful for speaking practice and general knowledge."
@@ -580,27 +610,33 @@
     "vocabulary": [
       {
         "word": "phase",
-        "meaning": "위상"
+        "meaning": "위상",
+        "pronunciation": "/feɪz/"
       },
       {
         "word": "reflect",
-        "meaning": "반사하다"
+        "meaning": "반사하다",
+        "pronunciation": "/rɪˈflekt/"
       },
       {
         "word": "sunlit",
-        "meaning": "햇빛을 받은"
+        "meaning": "햇빛을 받은",
+        "pronunciation": "/ˈsʌn.lɪt/"
       },
       {
         "word": "view",
-        "meaning": "시야"
+        "meaning": "시야",
+        "pronunciation": "/vjuː/"
       },
       {
         "word": "full moon",
-        "meaning": "보름달"
+        "meaning": "보름달",
+        "pronunciation": "/ˌfʊl ˈmuːn/"
       },
       {
         "word": "new moon",
-        "meaning": "신월"
+        "meaning": "신월",
+        "pronunciation": "/ˌnuː ˈmuːn/"
       }
     ],
     "finalSpeaking": "The Moon seems to change shape in the night sky because we see different parts of its sunlit side. The Moon does not really change, but our view changes. The Moon will show another phase as it moves around Earth in the future, so this topic is useful for speaking practice and general knowledge."
@@ -681,27 +717,33 @@
     "vocabulary": [
       {
         "word": "star",
-        "meaning": "별"
+        "meaning": "별",
+        "pronunciation": "/stɑːr/"
       },
       {
         "word": "shine",
-        "meaning": "빛나다"
+        "meaning": "빛나다",
+        "pronunciation": "/ʃaɪn/"
       },
       {
         "word": "fusion",
-        "meaning": "융합"
+        "meaning": "융합",
+        "pronunciation": "/ˈfjuː.ʒən/"
       },
       {
         "word": "energy",
-        "meaning": "에너지"
+        "meaning": "에너지",
+        "pronunciation": "/ˈen.ɚ.dʒi/"
       },
       {
         "word": "enormous",
-        "meaning": "거대한"
+        "meaning": "거대한",
+        "pronunciation": "/ɪˈnɔːr.məs/"
       },
       {
         "word": "sun",
-        "meaning": "태양"
+        "meaning": "태양",
+        "pronunciation": "/sʌn/"
       }
     ],
     "finalSpeaking": "Stars shine across space because nuclear fusion releases energy. A star looks small from Earth, but it can be enormous. Our Sun will change as it grows older in the future, so this topic is useful for speaking practice and general knowledge."
@@ -782,27 +824,33 @@
     "vocabulary": [
       {
         "word": "black hole",
-        "meaning": "블랙홀"
+        "meaning": "블랙홀",
+        "pronunciation": "/ˌblæk ˈhoʊl/"
       },
       {
         "word": "gravity",
-        "meaning": "중력"
+        "meaning": "중력",
+        "pronunciation": "/ˈɡræv.ə.t̬i/"
       },
       {
         "word": "matter",
-        "meaning": "물질"
+        "meaning": "물질",
+        "pronunciation": "/ˈmæt̬.ɚ/"
       },
       {
         "word": "invisible",
-        "meaning": "보이지 않는"
+        "meaning": "보이지 않는",
+        "pronunciation": "/ɪnˈvɪz.ə.bəl/"
       },
       {
         "word": "telescope",
-        "meaning": "망원경"
+        "meaning": "망원경",
+        "pronunciation": "/ˈtel.ə.skoʊp/"
       },
       {
         "word": "observe",
-        "meaning": "관찰하다"
+        "meaning": "관찰하다",
+        "pronunciation": "/əbˈzɝːv/"
       }
     ],
     "finalSpeaking": "Black holes pull matter inward in regions of very strong gravity because their gravity is extremely powerful. A black hole is invisible, but its effects can be observed. New telescopes may reveal more about black holes in the future, so this topic is useful for speaking practice and general knowledge."
@@ -883,27 +931,33 @@
     "vocabulary": [
       {
         "word": "Mars",
-        "meaning": "화성"
+        "meaning": "화성",
+        "pronunciation": "/mɑːrz/"
       },
       {
         "word": "spacecraft",
-        "meaning": "우주선"
+        "meaning": "우주선",
+        "pronunciation": "/ˈspeɪs.kræft/"
       },
       {
         "word": "mission",
-        "meaning": "임무"
+        "meaning": "임무",
+        "pronunciation": "/ˈmɪʃ.ən/"
       },
       {
         "word": "sample",
-        "meaning": "표본"
+        "meaning": "표본",
+        "pronunciation": "/ˈsæm.pəl/"
       },
       {
         "word": "planet",
-        "meaning": "행성"
+        "meaning": "행성",
+        "pronunciation": "/ˈplæn.ɪt/"
       },
       {
         "word": "robot",
-        "meaning": "로봇"
+        "meaning": "로봇",
+        "pronunciation": "/ˈroʊ.bɑːt/"
       }
     ],
     "finalSpeaking": "Humans explore Mars with robots and spacecraft to learn about planets and possible past life. Mars is cold and dry, but it may have had water before. Future missions may bring samples back to Earth in the future, so this topic is useful for speaking practice and general knowledge."
@@ -984,27 +1038,33 @@
     "vocabulary": [
       {
         "word": "comet",
-        "meaning": "혜성"
+        "meaning": "혜성",
+        "pronunciation": "/ˈkɑː.mət/"
       },
       {
         "word": "orbit",
-        "meaning": "궤도"
+        "meaning": "궤도",
+        "pronunciation": "/ˈɔːr.bɪt/"
       },
       {
         "word": "ice",
-        "meaning": "얼음"
+        "meaning": "얼음",
+        "pronunciation": "/aɪs/"
       },
       {
         "word": "dust",
-        "meaning": "먼지"
+        "meaning": "먼지",
+        "pronunciation": "/dʌst/"
       },
       {
         "word": "solar system",
-        "meaning": "태양계"
+        "meaning": "태양계",
+        "pronunciation": "/ˈsoʊ.lɚ ˌsɪs.təm/"
       },
       {
         "word": "gravity",
-        "meaning": "중력"
+        "meaning": "중력",
+        "pronunciation": "/ˈɡræv.ə.t̬i/"
       }
     ],
     "finalSpeaking": "Comets travel around the Sun through the solar system because gravity keeps them in long orbits. A comet is mostly ice and dust, but it can look bright. Scientists may study comets to learn about the early solar system in the future, so this topic is useful for speaking practice and general knowledge."
@@ -1085,27 +1145,33 @@
     "vocabulary": [
       {
         "word": "ancient",
-        "meaning": "고대의"
+        "meaning": "고대의",
+        "pronunciation": "/ˈeɪn.ʃənt/"
       },
       {
         "word": "ash",
-        "meaning": "화산재"
+        "meaning": "화산재",
+        "pronunciation": "/æʃ/"
       },
       {
         "word": "eruption",
-        "meaning": "분화"
+        "meaning": "분화",
+        "pronunciation": "/ɪˈrʌp.ʃən/"
       },
       {
         "word": "preserve",
-        "meaning": "보존하다"
+        "meaning": "보존하다",
+        "pronunciation": "/prɪˈzɝːv/"
       },
       {
         "word": "archaeology",
-        "meaning": "고고학"
+        "meaning": "고고학",
+        "pronunciation": "/ˌɑːr.kiˈɑː.lə.dʒi/"
       },
       {
         "word": "evidence",
-        "meaning": "증거"
+        "meaning": "증거",
+        "pronunciation": "/ˈev.ə.dəns/"
       }
     ],
     "finalSpeaking": "Pompeii teaches us about Roman life through preserved streets and buildings because volcanic ash covered the city. Pompeii was a tragedy, but it became important for archaeology. Modern tools may reveal more details about daily life in the future, so this topic is useful for speaking practice and general knowledge."
@@ -1186,27 +1252,33 @@
     "vocabulary": [
       {
         "word": "pyramid",
-        "meaning": "피라미드"
+        "meaning": "피라미드",
+        "pronunciation": "/ˈpɪr.ə.mɪd/"
       },
       {
         "word": "tomb",
-        "meaning": "무덤"
+        "meaning": "무덤",
+        "pronunciation": "/tuːm/"
       },
       {
         "word": "afterlife",
-        "meaning": "사후세계"
+        "meaning": "사후세계",
+        "pronunciation": "/ˈæf.tɚ.laɪf/"
       },
       {
         "word": "king",
-        "meaning": "왕"
+        "meaning": "왕",
+        "pronunciation": "/kɪŋ/"
       },
       {
         "word": "symbol",
-        "meaning": "상징"
+        "meaning": "상징",
+        "pronunciation": "/ˈsɪm.bəl/"
       },
       {
         "word": "scan",
-        "meaning": "스캔하다"
+        "meaning": "스캔하다",
+        "pronunciation": "/skæn/"
       }
     ],
     "finalSpeaking": "Ancient Egyptians built pyramids near the Nile River to honor kings and prepare for the afterlife. Pyramids were tombs, but they were also symbols of power. New scans may help researchers find hidden spaces in the future, so this topic is useful for speaking practice and general knowledge."
@@ -1287,27 +1359,33 @@
     "vocabulary": [
       {
         "word": "road",
-        "meaning": "도로"
+        "meaning": "도로",
+        "pronunciation": "/roʊd/"
       },
       {
         "word": "empire",
-        "meaning": "제국"
+        "meaning": "제국",
+        "pronunciation": "/ˈem.paɪr/"
       },
       {
         "word": "soldier",
-        "meaning": "군인"
+        "meaning": "군인",
+        "pronunciation": "/ˈsoʊl.dʒɚ/"
       },
       {
         "word": "goods",
-        "meaning": "상품"
+        "meaning": "상품",
+        "pronunciation": "/ɡʊdz/"
       },
       {
         "word": "message",
-        "meaning": "메시지"
+        "meaning": "메시지",
+        "pronunciation": "/ˈmes.ɪdʒ/"
       },
       {
         "word": "network",
-        "meaning": "망"
+        "meaning": "망",
+        "pronunciation": "/ˈnet.wɝːk/"
       }
     ],
     "finalSpeaking": "Roman roads connected cities across the Roman Empire to move soldiers, goods, and messages. The roads were ancient, but some routes still influence travel today. Archaeologists may find more evidence of old road networks in the future, so this topic is useful for speaking practice and general knowledge."
@@ -1388,27 +1466,33 @@
     "vocabulary": [
       {
         "word": "calendar",
-        "meaning": "달력"
+        "meaning": "달력",
+        "pronunciation": "/ˈkæl.ən.dɚ/"
       },
       {
         "word": "ritual",
-        "meaning": "의식"
+        "meaning": "의식",
+        "pronunciation": "/ˈrɪtʃ.u.əl/"
       },
       {
         "word": "astronomy",
-        "meaning": "천문학"
+        "meaning": "천문학",
+        "pronunciation": "/əˈstrɑː.nə.mi/"
       },
       {
         "word": "farming",
-        "meaning": "농사"
+        "meaning": "농사",
+        "pronunciation": "/ˈfɑːr.mɪŋ/"
       },
       {
         "word": "advanced",
-        "meaning": "발달한"
+        "meaning": "발달한",
+        "pronunciation": "/ədˈvænst/"
       },
       {
         "word": "culture",
-        "meaning": "문화"
+        "meaning": "문화",
+        "pronunciation": "/ˈkʌl.tʃɚ/"
       }
     ],
     "finalSpeaking": "The Maya measured time with complex calendar systems to organize farming, rituals, and history. Their calendars were ancient, but mathematically advanced. Researchers may better understand how astronomy shaped Maya culture in the future, so this topic is useful for speaking practice and general knowledge."
@@ -1489,27 +1573,33 @@
     "vocabulary": [
       {
         "word": "writing",
-        "meaning": "문자"
+        "meaning": "문자",
+        "pronunciation": "/ˈraɪ.t̬ɪŋ/"
       },
       {
         "word": "record",
-        "meaning": "기록하다"
+        "meaning": "기록하다",
+        "pronunciation": "/rɪˈkɔːrd/"
       },
       {
         "word": "law",
-        "meaning": "법"
+        "meaning": "법",
+        "pronunciation": "/lɔː/"
       },
       {
         "word": "trade",
-        "meaning": "무역"
+        "meaning": "무역",
+        "pronunciation": "/treɪd/"
       },
       {
         "word": "clay",
-        "meaning": "점토"
+        "meaning": "점토",
+        "pronunciation": "/kleɪ/"
       },
       {
         "word": "discovery",
-        "meaning": "발견"
+        "meaning": "발견",
+        "pronunciation": "/dɪˈskʌv.ɚ.i/"
       }
     ],
     "finalSpeaking": "Ancient writing preserved information on clay, stone, and paper so people could record laws, trade, and stories. Spoken words disappear, but written words can last. New discoveries may change what we know about early cities in the future, so this topic is useful for speaking practice and general knowledge."
@@ -1590,27 +1680,33 @@
     "vocabulary": [
       {
         "word": "erupt",
-        "meaning": "분출하다"
+        "meaning": "분출하다",
+        "pronunciation": "/ɪˈrʌpt/"
       },
       {
         "word": "magma",
-        "meaning": "마그마"
+        "meaning": "마그마",
+        "pronunciation": "/ˈmæɡ.mə/"
       },
       {
         "word": "pressure",
-        "meaning": "압력"
+        "meaning": "압력",
+        "pronunciation": "/ˈpreʃ.ɚ/"
       },
       {
         "word": "crust",
-        "meaning": "지각"
+        "meaning": "지각",
+        "pronunciation": "/krʌst/"
       },
       {
         "word": "active",
-        "meaning": "활동 중인"
+        "meaning": "활동 중인",
+        "pronunciation": "/ˈæk.tɪv/"
       },
       {
         "word": "predict",
-        "meaning": "예측하다"
+        "meaning": "예측하다",
+        "pronunciation": "/prɪˈdɪkt/"
       }
     ],
     "finalSpeaking": "Volcanoes erupt where pressure builds under the ground because hot magma pushes upward. Not all volcanoes are active, but some may erupt again. Scientists may predict eruptions by watching gas and earthquakes in the future, so this topic is useful for speaking practice and general knowledge."
@@ -1691,27 +1787,33 @@
     "vocabulary": [
       {
         "word": "earthquake",
-        "meaning": "지진"
+        "meaning": "지진",
+        "pronunciation": "/ˈɝːθ.kweɪk/"
       },
       {
         "word": "crust",
-        "meaning": "지각"
+        "meaning": "지각",
+        "pronunciation": "/krʌst/"
       },
       {
         "word": "plate",
-        "meaning": "판"
+        "meaning": "판",
+        "pronunciation": "/pleɪt/"
       },
       {
         "word": "suddenly",
-        "meaning": "갑자기"
+        "meaning": "갑자기",
+        "pronunciation": "/ˈsʌd.ən.li/"
       },
       {
         "word": "destructive",
-        "meaning": "파괴적인"
+        "meaning": "파괴적인",
+        "pronunciation": "/dɪˈstrʌk.tɪv/"
       },
       {
         "word": "warning",
-        "meaning": "경고"
+        "meaning": "경고",
+        "pronunciation": "/ˈwɔːr.nɪŋ/"
       }
     ],
     "finalSpeaking": "Earthquakes happen along cracks in Earth's crust because tectonic plates suddenly move. Small earthquakes are common, but large ones can be destructive. Early warning systems may help people prepare in the future, so this topic is useful for speaking practice and general knowledge."
@@ -1792,27 +1894,33 @@
     "vocabulary": [
       {
         "word": "mountain",
-        "meaning": "산"
+        "meaning": "산",
+        "pronunciation": "/ˈmaʊn.tən/"
       },
       {
         "word": "collide",
-        "meaning": "충돌하다"
+        "meaning": "충돌하다",
+        "pronunciation": "/kəˈlaɪd/"
       },
       {
         "word": "rock",
-        "meaning": "암석"
+        "meaning": "암석",
+        "pronunciation": "/rɑːk/"
       },
       {
         "word": "upward",
-        "meaning": "위쪽으로"
+        "meaning": "위쪽으로",
+        "pronunciation": "/ˈʌp.wɚd/"
       },
       {
         "word": "erosion",
-        "meaning": "침식"
+        "meaning": "침식",
+        "pronunciation": "/ɪˈroʊ.ʒən/"
       },
       {
         "word": "shape",
-        "meaning": "형태"
+        "meaning": "형태",
+        "pronunciation": "/ʃeɪp/"
       }
     ],
     "finalSpeaking": "Mountains form where Earth's plates collide because rock is pushed upward over long periods. Mountains seem still, but they can grow very slowly. Erosion will continue to change mountain shapes in the future, so this topic is useful for speaking practice and general knowledge."
@@ -1893,27 +2001,33 @@
     "vocabulary": [
       {
         "word": "fossil",
-        "meaning": "화석"
+        "meaning": "화석",
+        "pronunciation": "/ˈfɑː.səl/"
       },
       {
         "word": "layer",
-        "meaning": "층"
+        "meaning": "층",
+        "pronunciation": "/ˈleɪ.ɚ/"
       },
       {
         "word": "remain",
-        "meaning": "유해"
+        "meaning": "유해",
+        "pronunciation": "/rɪˈmeɪn/"
       },
       {
         "word": "bury",
-        "meaning": "묻다"
+        "meaning": "묻다",
+        "pronunciation": "/ˈber.i/"
       },
       {
         "word": "preserve",
-        "meaning": "보존하다"
+        "meaning": "보존하다",
+        "pronunciation": "/prɪˈzɝːv/"
       },
       {
         "word": "species",
-        "meaning": "종"
+        "meaning": "종",
+        "pronunciation": "/ˈspiː.ʃiːz/"
       }
     ],
     "finalSpeaking": "Fossils form inside layers of rock when remains are buried and preserved. Most dead organisms disappear, but a few become fossils. New fossils may reveal unknown species in the future, so this topic is useful for speaking practice and general knowledge."
@@ -1994,27 +2108,33 @@
     "vocabulary": [
       {
         "word": "glacier",
-        "meaning": "빙하"
+        "meaning": "빙하",
+        "pronunciation": "/ˈɡleɪ.ʃɚ/"
       },
       {
         "word": "ice",
-        "meaning": "얼음"
+        "meaning": "얼음",
+        "pronunciation": "/aɪs/"
       },
       {
         "word": "flow",
-        "meaning": "흐르다"
+        "meaning": "흐르다",
+        "pronunciation": "/floʊ/"
       },
       {
         "word": "weight",
-        "meaning": "무게"
+        "meaning": "무게",
+        "pronunciation": "/weɪt/"
       },
       {
         "word": "shrink",
-        "meaning": "줄어들다"
+        "meaning": "줄어들다",
+        "pronunciation": "/ʃrɪŋk/"
       },
       {
         "word": "temperature",
-        "meaning": "온도"
+        "meaning": "온도",
+        "pronunciation": "/ˈtem.prə.tʃɚ/"
       }
     ],
     "finalSpeaking": "Glaciers move slowly down mountains and across land because heavy ice flows under its own weight. A glacier looks still, but it is always moving. Warming temperatures may make many glaciers shrink in the future, so this topic is useful for speaking practice and general knowledge."
@@ -2095,27 +2215,33 @@
     "vocabulary": [
       {
         "word": "creature",
-        "meaning": "생물"
+        "meaning": "생물",
+        "pronunciation": "/ˈkriː.tʃɚ/"
       },
       {
         "word": "sunlight",
-        "meaning": "햇빛"
+        "meaning": "햇빛",
+        "pronunciation": "/ˈsʌn.laɪt/"
       },
       {
         "word": "pressure",
-        "meaning": "압력"
+        "meaning": "압력",
+        "pronunciation": "/ˈpreʃ.ɚ/"
       },
       {
         "word": "adapt",
-        "meaning": "적응하다"
+        "meaning": "적응하다",
+        "pronunciation": "/əˈdæpt/"
       },
       {
         "word": "species",
-        "meaning": "종"
+        "meaning": "종",
+        "pronunciation": "/ˈspiː.ʃiːz/"
       },
       {
         "word": "explore",
-        "meaning": "탐험하다"
+        "meaning": "탐험하다",
+        "pronunciation": "/ɪkˈsplɔːr/"
       }
     ],
     "finalSpeaking": "Many creatures live deep in the dark ocean because they adapt to pressure and darkness. The deep ocean is harsh, but life exists there. New technology may reveal many unknown species in the future, so this topic is useful for speaking practice and general knowledge."
@@ -2196,27 +2322,33 @@
     "vocabulary": [
       {
         "word": "vent",
-        "meaning": "분출구"
+        "meaning": "분출구",
+        "pronunciation": "/vent/"
       },
       {
         "word": "seawater",
-        "meaning": "바닷물"
+        "meaning": "바닷물",
+        "pronunciation": "/ˈsiːˌwɑː.t̬ɚ/"
       },
       {
         "word": "ocean floor",
-        "meaning": "해저"
+        "meaning": "해저",
+        "pronunciation": "/ˈoʊ.ʃən flɔːr/"
       },
       {
         "word": "heat",
-        "meaning": "열"
+        "meaning": "열",
+        "pronunciation": "/hiːt/"
       },
       {
         "word": "absent",
-        "meaning": "없는"
+        "meaning": "없는",
+        "pronunciation": "/ˈæb.sənt/"
       },
       {
         "word": "research",
-        "meaning": "연구"
+        "meaning": "연구",
+        "pronunciation": "/rɪˈsɝːtʃ/"
       }
     ],
     "finalSpeaking": "Hydrothermal vents release hot water on the ocean floor because seawater meets heat from inside Earth. Sunlight is absent there, but life can still grow. Vent research may change how we think about life in the future, so this topic is useful for speaking practice and general knowledge."
@@ -2297,27 +2429,33 @@
     "vocabulary": [
       {
         "word": "glow",
-        "meaning": "빛나다"
+        "meaning": "빛나다",
+        "pronunciation": "/ɡloʊ/"
       },
       {
         "word": "bioluminescence",
-        "meaning": "생물발광"
+        "meaning": "생물발광",
+        "pronunciation": "/ˌbaɪ.oʊˌluː.məˈnes.əns/"
       },
       {
         "word": "prey",
-        "meaning": "먹이"
+        "meaning": "먹이",
+        "pronunciation": "/preɪ/"
       },
       {
         "word": "mate",
-        "meaning": "짝"
+        "meaning": "짝",
+        "pronunciation": "/meɪt/"
       },
       {
         "word": "protein",
-        "meaning": "단백질"
+        "meaning": "단백질",
+        "pronunciation": "/ˈproʊ.tiːn/"
       },
       {
         "word": "darkness",
-        "meaning": "어둠"
+        "meaning": "어둠",
+        "pronunciation": "/ˈdɑːrk.nəs/"
       }
     ],
     "finalSpeaking": "Some deep-sea animals glow in the dark ocean to attract prey, find mates, or avoid danger. Light is rare in the deep sea, but some animals make their own. Scientists may use glowing proteins in new research in the future, so this topic is useful for speaking practice and general knowledge."
@@ -2398,27 +2536,33 @@
     "vocabulary": [
       {
         "word": "pressure",
-        "meaning": "압력"
+        "meaning": "압력",
+        "pronunciation": "/ˈpreʃ.ɚ/"
       },
       {
         "word": "deep",
-        "meaning": "깊은"
+        "meaning": "깊은",
+        "pronunciation": "/diːp/"
       },
       {
         "word": "push",
-        "meaning": "밀다"
+        "meaning": "밀다",
+        "pronunciation": "/pʊʃ/"
       },
       {
         "word": "submarine",
-        "meaning": "잠수함"
+        "meaning": "잠수함",
+        "pronunciation": "/ˌsʌb.məˈriːn/"
       },
       {
         "word": "survive",
-        "meaning": "생존하다"
+        "meaning": "생존하다",
+        "pronunciation": "/sɚˈvaɪv/"
       },
       {
         "word": "machine",
-        "meaning": "기계"
+        "meaning": "기계",
+        "pronunciation": "/məˈʃiːn/"
       }
     ],
     "finalSpeaking": "Deep-sea pressure becomes stronger as water gets deeper because more water pushes down from above. Humans need machines there, but many animals survive naturally. Better submarines may help people explore deeper places in the future, so this topic is useful for speaking practice and general knowledge."
@@ -2499,27 +2643,33 @@
     "vocabulary": [
       {
         "word": "coral reef",
-        "meaning": "산호초"
+        "meaning": "산호초",
+        "pronunciation": "/ˈkɔːr.əl ˌriːf/"
       },
       {
         "word": "support",
-        "meaning": "지탱하다"
+        "meaning": "지탱하다",
+        "pronunciation": "/səˈpɔːrt/"
       },
       {
         "word": "shallow",
-        "meaning": "얕은"
+        "meaning": "얕은",
+        "pronunciation": "/ˈʃæl.oʊ/"
       },
       {
         "word": "damage",
-        "meaning": "손상시키다"
+        "meaning": "손상시키다",
+        "pronunciation": "/ˈdæm.ɪdʒ/"
       },
       {
         "word": "warm",
-        "meaning": "따뜻한"
+        "meaning": "따뜻한",
+        "pronunciation": "/wɔːrm/"
       },
       {
         "word": "living",
-        "meaning": "살아있는"
+        "meaning": "살아있는",
+        "pronunciation": "/ˈlɪv.ɪŋ/"
       }
     ],
     "finalSpeaking": "Coral reefs support life in warm shallow seas because many fish and animals live there. Reefs look like rocks, but they are built by living animals. Warming oceans may damage many coral reefs in the future, so this topic is useful for speaking practice and general knowledge."
@@ -2600,27 +2750,33 @@
     "vocabulary": [
       {
         "word": "ancient",
-        "meaning": "고대의"
+        "meaning": "고대의",
+        "pronunciation": "/ˈeɪn.ʃənt/"
       },
       {
         "word": "observe",
-        "meaning": "관찰하다"
+        "meaning": "관찰하다",
+        "pronunciation": "/əbˈzɝːv/"
       },
       {
         "word": "route",
-        "meaning": "경로"
+        "meaning": "경로",
+        "pronunciation": "/ruːt/"
       },
       {
         "word": "landmark",
-        "meaning": "주요 지형지물"
+        "meaning": "주요 지형지물",
+        "pronunciation": "/ˈlænd.mɑːrk/"
       },
       {
         "word": "trade",
-        "meaning": "무역"
+        "meaning": "무역",
+        "pronunciation": "/treɪd/"
       },
       {
         "word": "merchant",
-        "meaning": "상인"
+        "meaning": "상인",
+        "pronunciation": "/ˈmɝː.tʃənt/"
       }
     ],
     "finalSpeaking": "Ancient people made maps by observing land and sea to remember routes and landmarks. Ancient maps were less exact, but practical. Digital maps will continue to change how we travel in the future, so this topic is useful for speaking practice and general knowledge."
@@ -2701,27 +2857,33 @@
     "vocabulary": [
       {
         "word": "compass",
-        "meaning": "나침반"
+        "meaning": "나침반",
+        "pronunciation": "/ˈkʌm.pəs/"
       },
       {
         "word": "navigate",
-        "meaning": "항해하다"
+        "meaning": "항해하다",
+        "pronunciation": "/ˈnæv.ə.ɡeɪt/"
       },
       {
         "word": "magnetic",
-        "meaning": "자기의"
+        "meaning": "자기의",
+        "pronunciation": "/mæɡˈnet̬.ɪk/"
       },
       {
         "word": "north",
-        "meaning": "북쪽"
+        "meaning": "북쪽",
+        "pronunciation": "/nɔːrθ/"
       },
       {
         "word": "direction",
-        "meaning": "방향"
+        "meaning": "방향",
+        "pronunciation": "/dəˈrek.ʃən/"
       },
       {
         "word": "guide",
-        "meaning": "안내하다"
+        "meaning": "안내하다",
+        "pronunciation": "/ɡaɪd/"
       }
     ],
     "finalSpeaking": "The compass helped travelers navigate across land and sea because it points toward magnetic north. Stars can guide people, but clouds can hide them. Modern navigation still depends on direction systems in the future, so this topic is useful for speaking practice and general knowledge."
@@ -2802,27 +2964,33 @@
     "vocabulary": [
       {
         "word": "Silk Road",
-        "meaning": "실크로드"
+        "meaning": "실크로드",
+        "pronunciation": "/ˌsɪlk ˈroʊd/"
       },
       {
         "word": "region",
-        "meaning": "지역"
+        "meaning": "지역",
+        "pronunciation": "/ˈriː.dʒən/"
       },
       {
         "word": "goods",
-        "meaning": "상품"
+        "meaning": "상품",
+        "pronunciation": "/ɡʊdz/"
       },
       {
         "word": "idea",
-        "meaning": "생각"
+        "meaning": "생각",
+        "pronunciation": "/aɪˈdiː.ə/"
       },
       {
         "word": "network",
-        "meaning": "망"
+        "meaning": "망",
+        "pronunciation": "/ˈnet.wɝːk/"
       },
       {
         "word": "exchange",
-        "meaning": "교류"
+        "meaning": "교류",
+        "pronunciation": "/ɪksˈtʃeɪndʒ/"
       }
     ],
     "finalSpeaking": "The Silk Road connected regions across Asia, the Middle East, and Europe so people could trade goods and ideas. It was not one road, but a network of routes. Historians may find more evidence of cultural exchange in the future, so this topic is useful for speaking practice and general knowledge."
@@ -2903,27 +3071,33 @@
     "vocabulary": [
       {
         "word": "polar",
-        "meaning": "극지방의"
+        "meaning": "극지방의",
+        "pronunciation": "/ˈpoʊ.lɚ/"
       },
       {
         "word": "remote",
-        "meaning": "외딴"
+        "meaning": "외딴",
+        "pronunciation": "/rɪˈmoʊt/"
       },
       {
         "word": "explorer",
-        "meaning": "탐험가"
+        "meaning": "탐험가",
+        "pronunciation": "/ɪkˈsplɔːr.ɚ/"
       },
       {
         "word": "equipment",
-        "meaning": "장비"
+        "meaning": "장비",
+        "pronunciation": "/ɪˈkwɪp.mənt/"
       },
       {
         "word": "harsh",
-        "meaning": "가혹한"
+        "meaning": "가혹한",
+        "pronunciation": "/hɑːrʃ/"
       },
       {
         "word": "risk",
-        "meaning": "위험"
+        "meaning": "위험",
+        "pronunciation": "/rɪsk/"
       }
     ],
     "finalSpeaking": "Polar exploration was dangerous in icy and remote regions because explorers faced cold, hunger, and uncertain maps. Modern equipment helps, but polar regions are still harsh. Climate change may open new routes and risks in the future, so this topic is useful for speaking practice and general knowledge."
@@ -3004,27 +3178,33 @@
     "vocabulary": [
       {
         "word": "GPS",
-        "meaning": "위성항법장치"
+        "meaning": "위성항법장치",
+        "pronunciation": "/ˌdʒiː piː ˈes/"
       },
       {
         "word": "location",
-        "meaning": "위치"
+        "meaning": "위치",
+        "pronunciation": "/loʊˈkeɪ.ʃən/"
       },
       {
         "word": "signal",
-        "meaning": "신호"
+        "meaning": "신호",
+        "pronunciation": "/ˈsɪɡ.nəl/"
       },
       {
         "word": "satellite",
-        "meaning": "위성"
+        "meaning": "위성",
+        "pronunciation": "/ˈsæt̬.əl.aɪt/"
       },
       {
         "word": "distance",
-        "meaning": "거리"
+        "meaning": "거리",
+        "pronunciation": "/ˈdɪs.təns/"
       },
       {
         "word": "precise",
-        "meaning": "정확한"
+        "meaning": "정확한",
+        "pronunciation": "/prɪˈsaɪs/"
       }
     ],
     "finalSpeaking": "GPS finds location by using signals from satellites because several satellites can measure distance. A paper map shows places, but GPS updates your position. Navigation may become even more precise in the future, so this topic is useful for speaking practice and general knowledge."
@@ -3105,27 +3285,33 @@
     "vocabulary": [
       {
         "word": "memory",
-        "meaning": "기억"
+        "meaning": "기억",
+        "pronunciation": "/ˈmem.ɚ.i/"
       },
       {
         "word": "information",
-        "meaning": "정보"
+        "meaning": "정보",
+        "pronunciation": "/ˌɪn.fɚˈmeɪ.ʃən/"
       },
       {
         "word": "experience",
-        "meaning": "경험"
+        "meaning": "경험",
+        "pronunciation": "/ɪkˈspɪr.i.əns/"
       },
       {
         "word": "store",
-        "meaning": "저장하다"
+        "meaning": "저장하다",
+        "pronunciation": "/stɔːr/"
       },
       {
         "word": "recall",
-        "meaning": "떠올리다"
+        "meaning": "떠올리다",
+        "pronunciation": "/rɪˈkɑːl/"
       },
       {
         "word": "connection",
-        "meaning": "연결"
+        "meaning": "연결",
+        "pronunciation": "/kəˈnek.ʃən/"
       }
     ],
     "finalSpeaking": "Memory helps us learn through changes in the brain because the brain stores and recalls information. Some memories are short, but others last for years. Practice may strengthen memory over time in the future, so this topic is useful for speaking practice and general knowledge."
@@ -3206,27 +3392,33 @@
     "vocabulary": [
       {
         "word": "sleep",
-        "meaning": "수면"
+        "meaning": "수면",
+        "pronunciation": "/sliːp/"
       },
       {
         "word": "recover",
-        "meaning": "회복하다"
+        "meaning": "회복하다",
+        "pronunciation": "/rɪˈkʌv.ɚ/"
       },
       {
         "word": "rest",
-        "meaning": "휴식"
+        "meaning": "휴식",
+        "pronunciation": "/rest/"
       },
       {
         "word": "active",
-        "meaning": "활동적인"
+        "meaning": "활동적인",
+        "pronunciation": "/ˈæk.tɪv/"
       },
       {
         "word": "habit",
-        "meaning": "습관"
+        "meaning": "습관",
+        "pronunciation": "/ˈhæb.ɪt/"
       },
       {
         "word": "health",
-        "meaning": "건강"
+        "meaning": "건강",
+        "pronunciation": "/helθ/"
       }
     ],
     "finalSpeaking": "Sleep helps the body recover during the night because the brain and body need rest. Sleep looks passive, but the brain stays active. Better sleep habits may improve health and learning in the future, so this topic is useful for speaking practice and general knowledge."
@@ -3307,27 +3499,33 @@
     "vocabulary": [
       {
         "word": "immune system",
-        "meaning": "면역 체계"
+        "meaning": "면역 체계",
+        "pronunciation": "/ɪˈmjuːn ˌsɪs.təm/"
       },
       {
         "word": "germ",
-        "meaning": "세균"
+        "meaning": "세균",
+        "pronunciation": "/dʒɝːm/"
       },
       {
         "word": "disease",
-        "meaning": "질병"
+        "meaning": "질병",
+        "pronunciation": "/dɪˈziːz/"
       },
       {
         "word": "recognize",
-        "meaning": "인식하다"
+        "meaning": "인식하다",
+        "pronunciation": "/ˈrek.əɡ.naɪz/"
       },
       {
         "word": "vaccine",
-        "meaning": "백신"
+        "meaning": "백신",
+        "pronunciation": "/vækˈsiːn/"
       },
       {
         "word": "infection",
-        "meaning": "감염"
+        "meaning": "감염",
+        "pronunciation": "/ɪnˈfek.ʃən/"
       }
     ],
     "finalSpeaking": "The immune system protects the body against germs and disease because it recognizes and attacks harmful invaders. Some germs are harmful, but others are harmless or helpful. Vaccines may train the immune system before infection in the future, so this topic is useful for speaking practice and general knowledge."
@@ -3408,27 +3606,33 @@
     "vocabulary": [
       {
         "word": "taste bud",
-        "meaning": "미뢰"
+        "meaning": "미뢰",
+        "pronunciation": "/ˈteɪst bʌd/"
       },
       {
         "word": "flavor",
-        "meaning": "맛"
+        "meaning": "맛",
+        "pronunciation": "/ˈfleɪ.vɚ/"
       },
       {
         "word": "tongue",
-        "meaning": "혀"
+        "meaning": "혀",
+        "pronunciation": "/tʌŋ/"
       },
       {
         "word": "signal",
-        "meaning": "신호"
+        "meaning": "신호",
+        "pronunciation": "/ˈsɪɡ.nəl/"
       },
       {
         "word": "smell",
-        "meaning": "냄새"
+        "meaning": "냄새",
+        "pronunciation": "/smel/"
       },
       {
         "word": "detect",
-        "meaning": "감지하다"
+        "meaning": "감지하다",
+        "pronunciation": "/dɪˈtekt/"
       }
     ],
     "finalSpeaking": "Taste buds detect flavors on the tongue because they send signals to the brain. Taste comes from the tongue, but smell also changes flavor. Food science may create healthier flavors in the future, so this topic is useful for speaking practice and general knowledge."
@@ -3509,27 +3713,33 @@
     "vocabulary": [
       {
         "word": "emotion",
-        "meaning": "감정"
+        "meaning": "감정",
+        "pronunciation": "/ɪˈmoʊ.ʃən/"
       },
       {
         "word": "behavior",
-        "meaning": "행동"
+        "meaning": "행동",
+        "pronunciation": "/bɪˈheɪ.vjɚ/"
       },
       {
         "word": "respond",
-        "meaning": "반응하다"
+        "meaning": "반응하다",
+        "pronunciation": "/rɪˈspɑːnd/"
       },
       {
         "word": "danger",
-        "meaning": "위험"
+        "meaning": "위험",
+        "pronunciation": "/ˈdeɪn.dʒɚ/"
       },
       {
         "word": "relationship",
-        "meaning": "관계"
+        "meaning": "관계",
+        "pronunciation": "/rɪˈleɪ.ʃən.ʃɪp/"
       },
       {
         "word": "understand",
-        "meaning": "이해하다"
+        "meaning": "이해하다",
+        "pronunciation": "/ˌʌn.dɚˈstænd/"
       }
     ],
     "finalSpeaking": "Emotions guide behavior in social and personal situations because they help us respond to danger, loss, and connection. Emotions can feel messy, but they carry information. Understanding emotions may improve relationships in the future, so this topic is useful for speaking practice and general knowledge."
@@ -3610,27 +3820,33 @@
     "vocabulary": [
       {
         "word": "define",
-        "meaning": "정의하다"
+        "meaning": "정의하다",
+        "pronunciation": "/dɪˈfaɪn/"
       },
       {
         "word": "directly",
-        "meaning": "직접적으로"
+        "meaning": "직접적으로",
+        "pronunciation": "/dəˈrekt.li/"
       },
       {
         "word": "organize",
-        "meaning": "정리하다"
+        "meaning": "정리하다",
+        "pronunciation": "/ˈɔːr.ɡən.aɪz/"
       },
       {
         "word": "regular",
-        "meaning": "규칙적인"
+        "meaning": "규칙적인",
+        "pronunciation": "/ˈreɡ.jə.lɚ/"
       },
       {
         "word": "attention",
-        "meaning": "주의"
+        "meaning": "주의",
+        "pronunciation": "/əˈten.ʃən/"
       },
       {
         "word": "mysterious",
-        "meaning": "신비로운"
+        "meaning": "신비로운",
+        "pronunciation": "/mɪˈstɪr.i.əs/"
       }
     ],
     "finalSpeaking": "Time organizes experience through change, memory, and expectation because we use it to understand past and future. Clock time is regular, but felt time can change. Science may explain time better, but it may still feel mysterious in the future, so this topic is useful for speaking practice and general knowledge."
@@ -3711,27 +3927,33 @@
     "vocabulary": [
       {
         "word": "money",
-        "meaning": "돈"
+        "meaning": "돈",
+        "pronunciation": "/ˈmʌn.i/"
       },
       {
         "word": "value",
-        "meaning": "가치"
+        "meaning": "가치",
+        "pronunciation": "/ˈvæl.juː/"
       },
       {
         "word": "trust",
-        "meaning": "신뢰"
+        "meaning": "신뢰",
+        "pronunciation": "/trʌst/"
       },
       {
         "word": "accept",
-        "meaning": "받아들이다"
+        "meaning": "받아들이다",
+        "pronunciation": "/əkˈsept/"
       },
       {
         "word": "digital",
-        "meaning": "디지털의"
+        "meaning": "디지털의",
+        "pronunciation": "/ˈdɪdʒ.ə.t̬əl/"
       },
       {
         "word": "society",
-        "meaning": "사회"
+        "meaning": "사회",
+        "pronunciation": "/səˈsaɪ.ə.t̬i/"
       }
     ],
     "finalSpeaking": "Money has value inside human societies because people trust that others will accept it. Money is just paper or numbers, but trust makes it powerful. Digital money may change how people pay and save in the future, so this topic is useful for speaking practice and general knowledge."
@@ -3812,27 +4034,33 @@
     "vocabulary": [
       {
         "word": "language",
-        "meaning": "언어"
+        "meaning": "언어",
+        "pronunciation": "/ˈlæŋ.ɡwɪdʒ/"
       },
       {
         "word": "meaning",
-        "meaning": "의미"
+        "meaning": "의미",
+        "pronunciation": "/ˈmiː.nɪŋ/"
       },
       {
         "word": "express",
-        "meaning": "표현하다"
+        "meaning": "표현하다",
+        "pronunciation": "/ɪkˈspres/"
       },
       {
         "word": "thought",
-        "meaning": "생각"
+        "meaning": "생각",
+        "pronunciation": "/θɔːt/"
       },
       {
         "word": "flexible",
-        "meaning": "유연한"
+        "meaning": "유연한",
+        "pronunciation": "/ˈflek.sə.bəl/"
       },
       {
         "word": "translation",
-        "meaning": "번역"
+        "meaning": "번역",
+        "pronunciation": "/trænsˈleɪ.ʃən/"
       }
     ],
     "finalSpeaking": "Language helps humans share meaning in families, schools, and societies because people need to express thoughts and emotions. Animals communicate, but human language is especially flexible. Translation technology may connect more people in the future, so this topic is useful for speaking practice and general knowledge."
@@ -3913,27 +4141,33 @@
     "vocabulary": [
       {
         "word": "story",
-        "meaning": "이야기"
+        "meaning": "이야기",
+        "pronunciation": "/ˈstɔːr.i/"
       },
       {
         "word": "culture",
-        "meaning": "문화"
+        "meaning": "문화",
+        "pronunciation": "/ˈkʌl.tʃɚ/"
       },
       {
         "word": "generation",
-        "meaning": "세대"
+        "meaning": "세대",
+        "pronunciation": "/ˌdʒen.əˈreɪ.ʃən/"
       },
       {
         "word": "fictional",
-        "meaning": "허구의"
+        "meaning": "허구의",
+        "pronunciation": "/ˈfɪk.ʃən.əl/"
       },
       {
         "word": "reveal",
-        "meaning": "드러내다"
+        "meaning": "드러내다",
+        "pronunciation": "/rɪˈviːl/"
       },
       {
         "word": "media",
-        "meaning": "매체"
+        "meaning": "매체",
+        "pronunciation": "/ˈmiː.di.ə/"
       }
     ],
     "finalSpeaking": "Stories carry meaning across cultures and generations because they help people remember lessons and emotions. A story may be fictional, but it can reveal truth. New media will change how stories are shared in the future, so this topic is useful for speaking practice and general knowledge."
@@ -4014,27 +4248,33 @@
     "vocabulary": [
       {
         "word": "curiosity",
-        "meaning": "호기심"
+        "meaning": "호기심",
+        "pronunciation": "/ˌkjʊr.iˈɑː.sə.t̬i/"
       },
       {
         "word": "unknown",
-        "meaning": "알려지지 않은"
+        "meaning": "알려지지 않은",
+        "pronunciation": "/ˌʌnˈnoʊn/"
       },
       {
         "word": "question",
-        "meaning": "질문"
+        "meaning": "질문",
+        "pronunciation": "/ˈkwes.tʃən/"
       },
       {
         "word": "discovery",
-        "meaning": "발견"
+        "meaning": "발견",
+        "pronunciation": "/dɪˈskʌv.ɚ.i/"
       },
       {
         "word": "uncomfortable",
-        "meaning": "불편한"
+        "meaning": "불편한",
+        "pronunciation": "/ʌnˈkʌm.fɚ.t̬ə.bəl/"
       },
       {
         "word": "adapt",
-        "meaning": "적응하다"
+        "meaning": "적응하다",
+        "pronunciation": "/əˈdæpt/"
       }
     ],
     "finalSpeaking": "Curiosity pushes people to learn whenever they meet something unknown because questions lead to discovery. Curiosity can feel uncomfortable, but it opens new thinking. Curious learners may adapt better to change in the future, so this topic is useful for speaking practice and general knowledge."
