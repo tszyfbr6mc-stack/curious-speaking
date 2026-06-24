@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Curious Speaking Library</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <style>
     :root {
       --ink: #18211f;
@@ -82,12 +83,36 @@
       width: 42px;
       height: 42px;
       border-radius: 8px;
-      background: var(--green);
-      color: white;
-      display: grid;
-      place-items: center;
-      font-weight: 900;
+      background:
+        radial-gradient(circle at 74% 24%, rgba(212, 155, 53, 0.95) 0 8%, transparent 9%),
+        linear-gradient(135deg, #203d34, #2f7b57 68%, #d49b35);
+      position: relative;
       box-shadow: 0 10px 24px rgba(47, 123, 87, 0.24);
+      color: transparent;
+      font-size: 0;
+    }
+
+    .brand-mark::before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 12px;
+      width: 23px;
+      height: 17px;
+      border-radius: 14px;
+      background: #fbfaf5;
+      box-shadow: 7px 5px 0 -2px #dceef2;
+    }
+
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      left: 15px;
+      bottom: 11px;
+      width: 10px;
+      height: 8px;
+      background: #fbfaf5;
+      clip-path: polygon(0 0, 100% 0, 0 100%);
     }
 
     .nav,

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Curious Speaking icon">
+  <defs>
+    <linearGradient id="bg" x1="18" y1="16" x2="110" y2="116" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#203d34"/>
+      <stop offset="0.58" stop-color="#2f7b57"/>
+      <stop offset="1" stop-color="#d49b35"/>
+    </linearGradient>
+    <linearGradient id="spark" x1="82" y1="18" x2="112" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff4c8"/>
+      <stop offset="1" stop-color="#d49b35"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+  <path d="M30 71c0-20.4 16.6-37 37-37h2c18.8 0 34 15.2 34 34s-15.2 34-34 34H55.5L34 112V93.2C27.1 86.5 30 78.5 30 71Z" fill="#fbfaf5"/>
+  <path d="M43 70c0-13.8 11.2-25 25-25h2c12.2 0 22 9.8 22 22s-9.8 22-22 22H58.2L45 95V84.8c-1.4-1.1-2-2.8-2-4.8V70Z" fill="#dceef2"/>
+  <path d="M51 68c0-9.4 7.6-17 17-17h2c8.3 0 15 6.7 15 15s-6.7 15-15 15H57.8L51 84.5V68Z" fill="#2f7b57"/>
+  <circle cx="59" cy="66" r="3.5" fill="#fbfaf5"/>
+  <circle cx="69" cy="66" r="3.5" fill="#fbfaf5"/>
+  <circle cx="79" cy="66" r="3.5" fill="#fbfaf5"/>
+  <path d="M96 21l4.6 12.2L113 38l-12.4 4.8L96 55l-4.6-12.2L79 38l12.4-4.8L96 21Z" fill="url(#spark)"/>
+</svg>
