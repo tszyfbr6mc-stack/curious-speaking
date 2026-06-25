@@ -2,9 +2,13 @@
 
 Offline English speaking practice web app for curious topics.
 
+## Version
+
+`v1.1.0` · Season 1 content package v1.0
+
 ## What It Includes
 
-- 40 prebuilt lessons for Season 1
+- 10 official Founder’s Edition lessons for Season 1
 - Random lesson flow that skips completed lessons
 - Level filter
 - Pattern Training
@@ -19,6 +23,13 @@ Offline English speaking practice web app for curious topics.
 ```text
 index.html
 lessons.json
+favicon.svg
+apple-touch-icon.png
+icon-192.png
+icon-512.png
+site.webmanifest
+season1/
+docs/
 ```
 
 This app is fully static. It does not use an API key, backend server, database, or build step.
@@ -51,3 +62,5 @@ GitHub Pages will publish the app at the URL shown in the Pages settings.
 ## Updating Future Seasons
 
 For a new season, update or extend `lessons.json`. The app reads lesson data from that file.
+
+The Markdown source files for this season are stored in `season1/`.
